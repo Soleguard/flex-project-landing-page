@@ -1,4 +1,38 @@
-/* Format header */
-.header {
-  
+body {
+  background-color: darkslateblue;
+}
+
+/* Format ul */
+ul {
+  list-style-type: none;
+  gap: 16px;
+  display: flex;
+}
+
+/* Format logo */
+.logo {
+  color: white;
+  font-weight: 600;
+  margin-left: 150px;
+  margin-right: 550px;
+}
+
+/* Format a refs */
+a {
+  color: white; /* Colors 'a' elements */
+  text-decoration: none; /* Removes underlines */
+}
+
+.content-1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.subheader {
+  font-weight: bold;
+}
+
+.content-1 .subheader {
+  font-size: 24px;
 }
