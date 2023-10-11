@@ -14,7 +14,7 @@ ul {
   color: #F9FAF8;
   font-weight: 600;
   margin-left: 150px;
-  margin-right: 550px;
+  margin-right: 450px;
   font-size: 24px;
 }
   
@@ -38,14 +38,22 @@ a {
   font-weight: bolder;
   color: #F9FAF8;
   margin-left: 190px;
-}
-
-.text-image .subtext {
-  margin-left: 195px;
+  max-width: 400px;
 }
 
 .text-image {
   display: flex;
+}
+
+.text-image .subtext {
+  margin-left: 195px;
+  max-width: 360px;
+  
+}
+
+.text-image .image {
+  padding: 100px;
+  background-color: gray;
 }
 
 button {
@@ -61,6 +69,47 @@ button {
   height: 25px;
 }
 
-.content-4 .subheader {
+.content-2 {
+  background-color: white;
+  padding: 100px;
+  display: flex;
+}
+
+.content-3 {
+  background-color: gray;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 24px;
+  max-width: 500px;
+}
+
+.author {
+  margin-top: 120px;
+}
+
+.content-4 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  max-height: 100px;
+}
+
+.content-4 .box {
+  display: flex;
+  max-width: 800px;
   background-color: #3882F6;
+  padding: 50px 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 25px;
 }
