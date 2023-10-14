@@ -5,121 +5,121 @@ body {
 
 /* Top Bar */
 .top-bar {
-display: flex;
-justify-content: center;
+  display: flex;
 }
 
-/* Top Bar ul */
+/* Top Bar >> ul */
 .top-bar ul {
-list-style-type: none;
-gap: 16px;
-display: flex;
+  list-style-type: none;
+  gap: 16px;
+  padding: 0 400px; /* Add gaps horizontally */
+  flex-grow: 1; /* Take all horizontal space */
+  align-items: baseline; /* Align items vertically */
+  display: flex;
 }
 
-/* Top Bar Logo */
+/* Logo */
 .logo {
-color: #F9FAF8;
-font-weight: 600;
-font-size: 24px;
+  color: #F9FAF8;
+  font-weight: 600;
+  font-size: 24px;
+  margin-right: auto; /* Push rightmost elements to right end */
 }
-
+  
 /* a */
 a {
-color: #E5E7EB;
-text-decoration: none;
-font-size: 18px;
+  color: #E5E7EB;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 /* Content-1 */
 .content-1 {
-color: white;
-display: flex;
-justify-content: center;
-}
-
-/* Subheader */
-.subheader {
-font-weight: bold;
+  color: white;
+  display: flex;
+  flex-grow: 1; /* Take all horizontal space */
+  padding: 0 400px; /* Add gaps horizontally */
+  align-items: baseline; /* Align items vertically */
 }
 
 /* Content-1 Subheader */
 .content-1 .subheader {
-font-size: 48px;
-font-weight: bolder;
-color: #F9FAF8;
-margin-left: 190px;
-max-width: 400px;
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+  max-width: 400px;
+  margin-right: auto; /* Push rightmost elements to right end */
 }
 
 .text-image {
-display: flex;
+  display: flex;
 }
 
 .text-image .subtext {
-margin-left: 195px;
-max-width: 360px;
+  margin-left: 195px;
+  max-width: 360px;
 }
 
 .text-image .image {
-padding: 100px;
-background-color: gray;
+  padding: 100px;
+  background-color: gray;
 }
 
 button {
-background-color: #3882F6;
-border-radius: 25px;
+  background-color: #3882F6;
+  border-radius: 25px;
 }
 
 /* First button */
 .content-1 button {
-color: #E5E7EB;
-margin-left: 195px;
-width: 100px;
-height: 25px;
+  color: #E5E7EB;
+  margin-left: 195px;
+  width: 100px;
+  height: 25px;
 }
 
 .content-2 {
-background-color: white;
-padding: 100px;
-display: flex;
-justify-content: center;
+  background-color: white;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .content-3 {
-background-color: gray;
-padding: 100px;
-display: flex;
-justify-content: center;
+  background-color: gray;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .quote {
-font-style: italic;
-font-size: 24px;
-max-width: 500px;
+  font-style: italic;
+  font-size: 24px;
+  max-width: 500px;
 }
 
 .author {
-margin-top: 120px;
+  margin-top: 120px;
 }
 
 .content-4 {
-background-color: white;
-display: flex;
-justify-content: center;
-padding: 100px;
-max-height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  max-height: 100px;
 }
 
 .content-4 .box {
-display: flex;
-max-width: 800px;
-background-color: #3882F6;
-padding: 50px 200px;
+  display: flex;
+  max-width: 800px;
+  background-color: #3882F6;
+  padding: 50px 200px;
 }
 
 .footer {
-display: flex;
-justify-content: center;
-color: white;
-padding: 25px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 25px;
 }
