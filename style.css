@@ -3,6 +3,11 @@ body {
   background-color: #1F2937;
 }
 
+button {
+  background-color: #3882F6;
+  border-radius: 5px; /* Add circularity to all borders */
+}
+
 /* Top Bar */
 .top-bar {
   display: flex;
@@ -39,11 +44,12 @@ a {
   display: flex;
   flex-grow: 1; /* Take all horizontal space */
   padding: 0 400px; /* Add gaps horizontally */
+  margin-bottom: 100px; /* Add space to bottom margin */
   align-items: baseline; /* Align items vertically */
 }
 
-/* Content-1 Subheader */
-.content-1 .subheader {
+/* Content-1 >> Text >> Subheader */
+.content-1 .text .subheader {
   font-size: 48px;
   font-weight: bolder;
   color: #F9FAF8;
@@ -51,31 +57,23 @@ a {
   margin-right: auto; /* Push rightmost elements to right end */
 }
 
-.text-image {
-  display: flex;
+/* Content-1 >> Text >> Subtext */
+.content-1 .text .subtext {
+  max-width: 360px; /* Limit width of subtext */
 }
 
-.text-image .subtext {
-  margin-left: 195px;
-  max-width: 360px;
-}
-
-.text-image .image {
-  padding: 100px;
-  background-color: gray;
-}
-
-button {
-  background-color: #3882F6;
-  border-radius: 25px;
-}
-
-/* First button */
-.content-1 button {
+/* Content-1 >> Text >> Button */
+.content-1 .text button {
   color: #E5E7EB;
-  margin-left: 195px;
   width: 100px;
-  height: 25px;
+  height: 30px;
+  border: none; /* Remove borders */
+}
+
+/* Content-1 >> Image */
+.content-1 .image {
+  background-color: slategray;
+  padding: 100px 150px;
 }
 
 .content-2 {
