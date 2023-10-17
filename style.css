@@ -3,6 +3,7 @@ body {
   background-color: #1F2937;
 }
 
+/* Button */
 button {
   background-color: #3882F6;
   border-radius: 5px; /* Add circularity to all borders */
@@ -11,6 +12,7 @@ button {
 /* Top Bar */
 .top-bar {
   display: flex;
+  margin-bottom: 100px; /* Add space to margin-bottom */
 }
 
 /* Top Bar >> ul */
@@ -44,7 +46,7 @@ a {
   display: flex;
   flex-grow: 1; /* Take all horizontal space */
   padding: 0 400px; /* Add gaps horizontally */
-  margin-bottom: 100px; /* Add space to bottom margin */
+  margin-bottom: 100px; /* Add space to margin-bottom */
   align-items: baseline; /* Align items vertically */
 }
 
@@ -60,6 +62,7 @@ a {
 /* Content-1 >> Text >> Subtext */
 .content-1 .text .subtext {
   max-width: 360px; /* Limit width of subtext */
+  margin-bottom: 10px; /* Add space to margin-bottom */
 }
 
 /* Content-1 >> Text >> Button */
@@ -73,14 +76,34 @@ a {
 /* Content-1 >> Image */
 .content-1 .image {
   background-color: slategray;
-  padding: 100px 150px;
+  padding: 70px 100px; /* Add padding around image */
+  margin-left: auto; /* Push image to right end */
 }
 
+/* RESUME: Content-2 */
 .content-2 {
   background-color: white;
-  padding: 100px;
   display: flex;
+  padding: 100px 0;
   justify-content: center;
+}
+
+/* Content-2 >> Subheader */
+.content-2 .subheader {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+/* Content-2 >> Images */
+.content-2 .images {
+  display: flex;
+  margin-top: 100px; /* Add space to margin-top */
+  gap: 30px;
+}
+
+/* Content-2 >> Descs */
+.content-2 .descs {
+  margin-top: 300px; /* Add space to margin-top */
 }
 
 .content-3 {
