@@ -80,47 +80,73 @@ a {
   margin-left: auto; /* Push image to right end */
 }
 
-/* RESUME: Content-2 */
+/* Content-2 */
 .content-2 {
   background-color: white;
-  display: flex;
   padding: 100px 0;
-  justify-content: center;
 }
 
 /* Content-2 >> Subheader */
 .content-2 .subheader {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   font-size: 36px;
+  margin-bottom: 30px;
 }
 
 /* Content-2 >> Images */
 .content-2 .images {
   display: flex;
-  margin-top: 100px; /* Add space to margin-top */
-  gap: 30px;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+
+/* Content-2 >> Image */
+.content-2 .image {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px; /* Add circularity to all borders */
+  border: 4px solid #3882F6;
 }
 
 /* Content-2 >> Descs */
 .content-2 .descs {
-  margin-top: 300px; /* Add space to margin-top */
-}
-
-.content-3 {
-  background-color: gray;
-  padding: 100px;
   display: flex;
   justify-content: center;
+  gap: 60px;
 }
 
-.quote {
+/* Content-2 >> Desc */
+.content-2 .desc {
+  max-width: 130px; /* Limit text width */
+  text-align: center; /* Center-align text */
+  color: gray;
+}
+
+/* RESUME: Content-3 */
+.content-3 {
+  background-color: lightgray;
+  padding: 70px;
+}
+
+/* Block */
+.content-3 .block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content-3 >> Quote */
+.content-3 .block .quote {
   font-style: italic;
   font-size: 24px;
   max-width: 500px;
 }
 
-.author {
-  margin-top: 120px;
+/* Content-3 >> Author */
+.content-3 .block .author {
+  font-weight: bold;
 }
 
 .content-4 {
@@ -131,11 +157,12 @@ a {
   max-height: 100px;
 }
 
-.content-4 .box {
+.content-4 .call-box {
   display: flex;
   max-width: 800px;
   background-color: #3882F6;
   padding: 50px 200px;
+  border-radius: 5px; /* Add circularity to all borders */
 }
 
 .footer {
