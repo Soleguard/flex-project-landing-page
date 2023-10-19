@@ -1,5 +1,5 @@
 /* Body */
-body {
+.header-box, .footer-box {
   background-color: #1F2937;
 }
 
@@ -125,10 +125,12 @@ a {
   color: gray;
 }
 
-/* RESUME: Content-3 */
+/* Content-3 */
 .content-3 {
   background-color: lightgray;
   padding: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Block */
@@ -147,27 +149,51 @@ a {
 /* Content-3 >> Author */
 .content-3 .block .author {
   font-weight: bold;
+  margin-left: auto;
 }
 
+/* Content-4 */
 .content-4 {
   background-color: white;
   display: flex;
   justify-content: center;
   padding: 100px;
-  max-height: 100px;
 }
 
+/* Content-4 >> Call-box */
 .content-4 .call-box {
   display: flex;
-  max-width: 800px;
   background-color: #3882F6;
   padding: 50px 200px;
-  border-radius: 5px; /* Add circularity to all borders */
+  color: white;
+  border-radius: 10px; /* Add circularity to all borders */
 }
 
-.footer {
+/* Content-4 >> Call-box >> info */
+.content-4 .call-box .info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content-4 >> Call-box >> Subheader */
+.content-4 .call-box .info .subheader {
+  font-size: 24px;
+}
+
+/* Content-4 >> Call-box >> Button */
+.content-4 .call-box button {
+  color: #E5E7EB;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #E5E7EB; /* Remove borders */
+}
+
+.footer-box {
   display: flex;
   justify-content: center;
   color: white;
   padding: 25px;
+  gap: 10px;
+  font-size: 18px;
 }
