@@ -1,13 +1,15 @@
-/* TODO:
-
-1. Convert quote (gap, flex)
-2. Fill edges
-
-*/
-
-/* Header-box, footer-box */
+/* Header-Box, Footer-Box */
 .header-box, .footer-box {
   background-color: #1F2937;
+}
+
+/* Button */
+button {
+  color: #E5E7EB;
+  background-color: #3882F6;
+  font-weight: bold;
+  width: 110px;
+  height: 30px;
 }
 
 /* Content-1 >> Text >> Subtext, a */
@@ -16,24 +18,18 @@
   color: #E5E7EB;
 }
 
-/* Header-box */
+/* Header-Box */
 .header-box {
-  padding-bottom: 50px; /* Add padding-bottom */
+  padding-bottom: 50px;
 }
 
-/* Button */
-button {
-  background-color: #3882F6;
-  border-radius: 5px; /* Add circularity to all borders */
-}
-
-/* Header-box >> Top Bar */
+/* Header-Box >> Top-Bar */
 .header-box .top-bar {
   display: flex;
-  margin-bottom: 100px; /* Add space to margin-bottom */
+  margin-bottom: 100px;
 }
 
-/* Header-box >> Top Bar >> ul */
+/* Header-Box >> Top-Bar >> ul */
 .header-box .top-bar ul {
   list-style-type: none;
   gap: 16px;
@@ -43,7 +39,7 @@ button {
   display: flex;
 }
 
-/* Header-box >> Top-bar >> ul >> Logo */
+/* Header-Box >> Top-Bar >> ul >> Logo */
 .header-box .top-bar ul .logo {
   color: #F9FAF8;
   font-weight: bolder;
@@ -61,7 +57,7 @@ a {
   color: white;
   display: flex;
   flex-grow: 1; /* Take all horizontal space */
-  margin: 0 400px 100px; /* Add gaps horizontally and margin-bottom */
+  margin: 0 400px 100px; /* Add margins horizontally and margin-bottom */
   align-items: baseline; /* Align items vertically */
 }
 
@@ -77,23 +73,20 @@ a {
 /* Content-1 >> Text >> Subtext */
 .content-1 .text .subtext {
   font-size: 18px;
-  max-width: 360px; /* Limit width of subtext */
-  margin-bottom: 10px; /* Add space to margin-bottom */
+  max-width: 400px;
+  margin-bottom: 10px;
 }
 
 /* Content-1 >> Text >> Button */
 .content-1 .text button {
-  color: #E5E7EB;
-  width: 100px;
-  height: 30px;
   border: none; /* Remove borders */
-  font-weight: bold;
+  border-radius: 5px; /* Add circularity to all edges */
 }
 
 /* Content-1 >> Image */
 .content-1 .image {
   background-color: slategray;
-  padding: 70px 100px; /* Add padding around image */
+  padding: 70px 100px;
   margin-left: auto; /* Push image to right end */
 }
 
@@ -125,7 +118,7 @@ a {
 .content-2 .image {
   width: 130px;
   height: 130px;
-  border-radius: 10px; /* Add circularity to all borders */
+  border-radius: 10px; /* Add circularity to all edges */
   border: 4px solid #3882F6;
 }
 
@@ -138,8 +131,8 @@ a {
 
 /* Content-2 >> Desc */
 .content-2 .desc {
-  max-width: 130px; /* Limit text width */
-  text-align: center; /* Center-align text */
+  max-width: 130px;
+  text-align: center;
   color: gray;
 }
 
@@ -151,13 +144,13 @@ a {
   justify-content: center;
 }
 
-/* Block */
+/* Content-3 >> Block */
 .content-3 .block {
   display: flex;
   flex-direction: column;
 }
 
-/* Content-3 >> Quote */
+/* Content-3 >> Block >> Quote */
 .content-3 .block .quote {
   font-style: italic;
   font-size: 36px;
@@ -165,7 +158,7 @@ a {
   max-width: 750px;
 }
 
-/* Content-3 >> Author */
+/* Content-3 >> Block >> Author */
 .content-3 .block .author {
   font-weight: bold;
   margin-left: auto;
@@ -176,43 +169,40 @@ a {
   background-color: white;
   display: flex;
   justify-content: center;
-  padding: 100px;
+  margin: 100px 0;
 }
 
-/* Content-4 >> Call-box */
+/* Content-4 >> Call-Box */
 .content-4 .call-box {
   display: flex;
   background-color: #3882F6;
-  padding: 50px 100px;
+  padding: 60px 100px;
   color: white;
-  border-radius: 10px; /* Add circularity to all borders */
+  border-radius: 8px; /* Add circularity to all edges */
   align-items: end; /* Align button element to bottom of box */
-  gap: 100px; /* Add gap between elements */
+  gap: 250px;
 }
 
-/* Content-4 >> Call-box >> info */
+/* Content-4 >> Call-Box >> Info */
 .content-4 .call-box .info {
   display: flex;
   flex-direction: column;
 }
 
-/* Content-4 >> Call-box >> Subheader */
+/* Content-4 >> Call-Box >> Info >> Subheader */
 .content-4 .call-box .info .subheader {
   font-size: 24px;
   font-weight: bold;
 }
 
-/* Content-4 >> Call-box >> Button */
+/* Content-4 >> Call-Box >> Button */
 .content-4 .call-box button {
-  color: #E5E7EB;
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
-  border-color: #E5E7EB; /* Remove borders */
+  border-radius: 7px;
+  border-color: #E5E7EB; /* Hide borders */
   border-style: solid; /* Set borders (removes button outline discoloration) */
-  font-weight: bold;
 }
 
+/* Footer-Box */
 .footer-box {
   display: flex;
   justify-content: center;
